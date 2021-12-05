@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Chatbot</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  </head>
+  <body style="background-color:rgb(129, 185, 211);">
+    <div class="container" style="background-color:rgba(187, 126, 14, 0.993);">
+      <h1 style="font-family: Brush Script;color: gold;">Welcome to Chatbot</h1>
+      <br>
+      <hr>
+      <br>
+
+        <div class="row">
+          <div class="col-lg-9">
+            <input class="form-control" type="text" name="question" id="question">
+          </div>
+          <div class="col-lg-3">
+            <button class="btn btn-primary btn-block" id="submit-button">Send</button>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <p id="response"></p>
+          </div>
+        </div>
+
+    </div>
+
+    <script src="/static/jquery.min.js" ></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <script>
+
+
+      jQuery(document).ready(function() {
+
+        $("#submit-button").click(function(e) {
+          e.preventDefault();
+
+
+          $.ajax({
+              type: "POST",
+              url: "/chatbot",
+              data: {
+                  question: $("#question").val()
+              },
+              success: function(result) {
+                $("#response").append("<br>Me: "+$("#question").val()+ "<br> Bot: "+result.response);
+                $("#question").val("")
+              },
+              error: function(result) {
+                  alert('error');
+              }
+          });
+
+
+
+        });
+
+      });
+
+
+    </script>
+
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-database.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.3.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBb45phNQBQmK9QzeEWj2zUrx_SHRYpoz4",
+    authDomain: "chatbot-8b81b.firebaseapp.com",
+    databaseURL: "https://chatbot-8b81b-default-rtdb.firebaseio.com",
+    projectId: "chatbot-8b81b",
+    storageBucket: "chatbot-8b81b.appspot.com",
+    messagingSenderId: "432904400856",
+    appId: "1:432904400856:web:8534917c40b72286c68cad",
+    measurementId: "G-X3JMVRFL6N"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+  </body>
+</html>

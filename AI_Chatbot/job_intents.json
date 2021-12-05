@@ -1,0 +1,67 @@
+{
+  "intents": [
+    {"tag": "noanswer",
+      "patterns": ["",""],
+      "responses": [ "I am unable to understand, your query will be updated soon"]
+      },
+    {"tag": "mucormycosis",
+      "patterns": ["What is mucormycosis?", "Tell me about mucormycosis", "mucormycosis", "i want to know about mucormycosis", "What does mucormycosis mean?", "brief about mucormycosis", "What do you know about mucormycosis?", "medication for mucormycosis?"],
+      "responses": ["Mucormycosis is a serious infection and needs to be treated with prescription antifungal medicine, usually amphotericin B, posaconazole, or isavuconazole. These medicines are given through a vein (amphotericin B, posaconazole, isavuconazole) or by mouth (posaconazole, isavuconazole)."]
+     },
+     
+{"tag": "mrsa",
+  "patterns": ["What is mrsa?", "Tell me about mrsa", "mrsa", "i want to know about mrsa", "What does mrsa mean?", "brief about mrsa", "What do you know about mrsa?", "medication for mrsa?"],
+  "responses": ["1. Methicillin-resistant Staphylococcus aureus (MRSA) infection is caused by a type of staph bacteria that's become resistant to many of the antibiotics used to treat ordinary staph infections.2. Treatment of MRSA at home usually includes a 7- to 10-day course of an antibiotic (by mouth) such as trimethoprim-sulfamethoxazole (brand name: Bactrim), clindamycin, minocycline, linezolid, or doxycycline."]
+ },
+ 
+{"tag": "chickenpox",
+  "patterns": ["What is chickenpox?", "Tell me about chickenpox", "chickenpox", "i want to know about chickenpox", "What does chickenpox mean?", "brief about chickenpox", "What do you know about chickenpox?", "medication for chickenpox?"],
+  "responses": ["1. An infectious disease causing a mild fever and a rash of itchy inflamed pimples which turn to blisters and then loose scabs. It is caused by the herpes zoster virus and mainly affects children.2. If you or your child are at high risk of complications, your doctor may suggest an antiviral drug such as acyclovir (Zovirax, Sitavig). This medication might lessen the severity of chickenpox when given within 24 hours after the rash first appears."]
+ },
+{"tag": "monkeypox",
+  "patterns": ["What is monkeypox?", "Tell me about monkeypox", "monkeypox", "i want to know about monkeypox", "What does monkeypox mean?", "brief about monkeypox", "What do you know about monkeypox?", "medication for monkeypox?"],
+  "responses": ["1. A viral disease affecting rodents and primates in rainforest areas of west and central Africa, related to smallpox and sometimes transmitted to humans.2. At this time, there are no specific treatments available for monkeypox infection, but monkeypox outbreaks can be controlled. Smallpox vaccine, cidofovir, ST-246, and vaccinia immune globulin (VIG) can be used to control a monkeypox outbreak."]
+ },
+ {"tag": "fungal meningitis",
+  "patterns": ["What is fungal meningitis?", "Tell me about fungal meningitis", "fungal meningitis", "i want to know about fungal meningitis", "What does fungal meningitis mean?", "brief about fungal meningitis", "What do you know about fungal meningitis?", "medication for fungal meningitis?"],
+  "responses": ["1.Fungal meningitis is a rare type of meningitis. It stems from a fungal infection reaching the brain and spinal cord. It primarily affects people with weakened immune systems. 2. Doctors treat fungal meningitis with long courses of high-dose antifungal medications, often given directly into a vein through an IV. After that, patients also need to take antifungal medications by mouth. The total length of treatment depends on the patients immune system and the type of fungus causing the infection."]
+ },
+ {"tag": "ear infection",
+  "patterns": ["What is ear infection?", "Tell me about ear infection", "ear infection", "i want to know about ear infection", "What does ear infection mean?", "brief about ear infection", "What do you know about ear infection?", "medication for ear infection?"],
+  "responses": ["1. An ear infection occurs when a bacterial or viral infection affects the middle ear.2. Pain relievers:Children younger than 6 months: only give acetaminophen.Children 6 months or older: it is OK to give acetaminophen or ibuprofen.Never give aspirin to children because it can cause Reyeâs syndrome, a rare but very serious illness that harms the liver and brain."]
+ },
+
+{"tag": "conjunctivitis",
+  "patterns": ["What is conjunctivitis?", "Tell me about conjunctivitis", "conjunctivitis", "i want to know about conjunctivitis", "What does conjunctivitis mean?", "brief about conjunctivitis", "What do you know about conjunctivitis?", "medication for conjunctivitis?"],
+  "responses": ["1. Pink eye, also called conjunctivitis, is a infection of the eye's conjunctiva usually caused by a bacteria or virus.2. Antibiotic eye drops or ointments: To treat bacterial infections.Chloramphenicol, Moxifloxacin/Ciprofloxacin"]
+ },
+
+{"tag": "chickungunya",
+  "patterns": ["What is chickungunya?", "Tell me about chickungunya", "chickungunya", "i want to know about chickungunya", "What does chickungunya mean?", "brief about chickungunya", "What do you know about chickungunya?", "medication for chickungunya?"],
+  "responses": ["1. Chikungunya virus is spread to people by the bite of an infected mosquito. The most common symptoms of infection are fever and joint pain.2. There is no vaccine to prevent or medicine to treat chikungunya virus.If you are taking medicine for another medical condition, talk to your healthcare provider before taking additional medication."]
+ },
+
+{"tag": "ringworm",
+  "patterns": ["What is ringworm?", "Tell me about ringworm", "ringworm", "i want to know about ringworm", "What does ringworm mean?", "brief about ringworm", "What do you know about ringworm?", "medication for ringworm?"],
+  "responses": ["1. A contagious itching skin disease occurring in small circular patches, caused by any of a number of fungi and affecting chiefly the scalp or the feet.2. There are many non-prescription products available to treat ringworm, including:Clotrimazole (Lotrimin, Mycelex)"]
+ },
+
+{"tag": "diphtheria",
+  "patterns": ["What is diphtheria?", "Tell me about diphtheria", "diphtheria", "i want to know about diphtheria", "What does diphtheria mean?", "brief about diphtheria", "What do you know about diphtheria?", "medication for diphtheria?"],
+  "responses": ["1. An acute and highly contagious bacterial disease causing inflammation of the mucous membranes, formation of a false membrane in the throat which hinders breathing and swallowing, and potentially fatal heart and nerve damage by a bacterial toxin in the blood.2. Using diphtheria antitoxin to stop the toxin made by the bacteria from damaging the body. This treatment is very important for respiratory diphtheria infections, but it is rarely used for diphtheria skin infections.Using antibiotics to kill and get rid of the bacteria. This is important for both diphtheria infections in the respiratory system and on the skin.Tetanus-diphtheria-acellular pertussis(tdap), erythromycin, clyndamycin are some of the antibiotics and vaccines to prevent and treat diphtheria ."]
+ },
+
+{"tag": "dengue",
+  "patterns": ["What is dengue?", "Tell me about dengue", "dengue", "i want to know about dengue", "What does dengue mean?", "brief about dengue", "What do you know about dengue?", "medication for dengue?"],
+  "responses": ["1. Dengue viruses are spread to people through the bite of an infected Aedes species mosquito.2. Rest as much as possible.Take acetaminophen (also known as paracetamol) to control fever and relieve pain only if prescribed by doctor.Do not take aspirin or ibuprofen!Severe dengue is a medical emergency. It requires immediate medical care at a clinic or hospital."]
+ },
+       {"tag": "covid",
+        "patterns": ["What is covid?", "Tell me about covid", "covid", "i want to know about covid", "What does covid mean?", "brief about covid", "What do you know about covid?", "medication for covid?"],
+        "responses": ["Doxycycline 100mg bd 5days ,Ivermectin 12mg od 3days, Vit b complex, Vit c 500mg tid, Zinc tabs."]
+       },
+       {"tag": "inflammatory bowel disease",
+        "patterns": ["What is inflammatory bowel disease?", "Tell me about inflammatory bowel disease", "inflammatory bowel disease", "i want to know about inflammatory bowel disease", "What does inflammatory bowel disease mean?", "brief about inflammatory bowel disease", "What do you know about inflammatory bowel disease?", "medication for inflammatory bowel disease?"],
+        "responses": ["mesalamine (Asacol HD, Delzicol, others), balsalazide (Colazal) , olsalazine (Dipentum)."]
+       }
+  ]
+}
